@@ -1,57 +1,245 @@
+<!-- Telling brower which type of document -->
 <!DOCTYPE html>
-<html>
+<!-- tag for putting content lang-english US -->
+<html lang="en-US">
 	<head>
+		<!-- accept symbol, emoji, other language char-->
 		<meta charset="utf-8">
+		
+		<!-- good view for all devices max width of device and inial not zoom-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- tile for the page-->
 		<title>Html Structure</title>
+		<!-- internal css-->
+		<style>
+			h3{
+				color:red;
+			}
+			header{
+				background-color : gray;
+				color:white;
+			}
+			nav{
+				background-color : #f9ffe6;
+			}
+			article{
+				background-color : #e0e0eb;
+			}
+			section{
+				background-color: #f2f2f2;
+			}
+			aside{
+				background-color : #ffe6f3;
+			}
+			footer{
+				background-color : lime;
+			}
+			
+		</style>
 	</head>
+	<!-- actual content of page-->
 	<body>
-		<h1 id=c3>Heading one</h1>
-		<h2>Heading two</h2>
-		<h3>Heading three</h3>
-		<h4>Heading four</h4>
-		<h5>Heading five</h5>
-		<h6>Heading six</h6>
+	<header>
+		<h1 id="H1">Heading tag one</h1>
+		<h2>Heading tag two</h2>
+	</header>
+		<h3 style="color:black;">Heading tag three</h3>
+		<h4>Heading tag four</h4>
+		<h5>Heading tag five</h5>
+		<h6>Heading tag six</h6>
+		<hr>
+		
+		<nav>
+		<h3>NavBar</h3>
+        <ul style="list-style-type:none">
+          <li><a href="#unorderlist">Unorderlist</a></li>
+          <li><a href="#orderlist">orderlist</li>
+          <li><a href="#discriptinlist">discriptinlist</a></li>
+          <li><a href="#testformatting">testformatting</a></li>
+          <li><a href="#image">image</a></li>
+          <li><a href="#audio">audio</a></li>
+		  <li><a href="#video">video</a></li>
+        </ul>
+      </nav>
+		
+		
+		
+		<hr>
+		<article>
+		<h3>Article</h3>
+		<p title="just para for <p> tag">The HTTP header User-Agent is a request header that sends a characteristic string to web servers,<br>allowing them to identify the Operating System (OS) and browser of the client making the request.
+Every time your browser connects to a website, it includes the User-Agent field in the HTTP header.<br>This information helps websites serve content tailored to different browsers and operating systems.
+Since different browsers use varying formats, there is no standardized way of writing a User-Agent string.<br>Furthermore, modern browsers often add significant amounts of information to the User-Agent field.</p>
+</article>
+		<hr>
+	<section>
+		<h3 id="unorderlist">un ordered List</h3>
+		
+	<ul style="list-style-type:disc;">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ul>
+	
+	<ul style="list-style-type:circle;">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ul>
+	
+	<ul style="list-style-type:squre;">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ul>
+	
+	<ul style="list-style-type:none;">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ul>
+	</section>
+	<hr>
+	<section>
+	<h3 id="orderlist">order List</h3>
+	
+	<ol type="1">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ol>
+	
+	<ol type="I">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ol>
+	
+	<ol type="i">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ol>
+	
+	<ol type="A">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ol>
+	
+	<ol type="a">
+		<li>value1</li>
+		<li>value2</li>
+		<li>value3</li>
+		<li>value4</li>
+		<li>value5</li>
+	</ol>
+	</section>
+	<hr>
+	<section>
+	<h3 id="discriptinlist"> Description List </h3>
+	
+	<dl>
+		<dt>Coffee</dt>
+		<dd>-Moring</dd>
+		<dt>Tea</dt>
+		<dd>-Moring</dd>
+		<dd>-Evening</dd>
+		<dt>Milk</dt>
+		<dd>-Night</dd>
+	</dl>
+	</section>
+	<hr>
+	<aside>
+	<h2 style="color:red;">Blackquote<h2>
+		<blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp"> element defines a section that is quoted from another source.</blockquote>
 		<br>
-		<hr>
-		<p>Our aim "here is not to" show you how to use everything <br>that can possibly be put in the head, but rather to teach you how to use the 
-		major elements that you'll want to include in the head, and give you some familiarity. Let's get started.</p>
-		<hr>
-		<h3>This is poem</h3>
-		<pre>
+		<h2 style="color:red;">Preformated data<h2>
+				<pre>
 line one
 	line two
 		line three
-		line four
-		for                     test 
+			line four                     
 		</pre>
-		<hr>
-		<h3>Formating</h3>
-		<p>For 60 years, WWF <b>has</b> worked to help <strong>people</strong> and nature thrive. As the <i>world's</i> leading conservation <em>organization,</em> WWF works in nearly 100 <mark>countries.</mark>
-		At <small>every</small> level, we collaborate with people <del>around</del> the world to develop and <br>deliver <ins>innovative</ins> solutions that <sub>protect</sub> communities, <sup>wildlife,</sup> and the places in which they live.
+	</aside>
+	<hr>
+		<h3 id="testformatting">Formating</h3>
+		<h2 style="color:red;">All word style</h2>
+		<p>For 60 years, WWF <b>BOLD</b> worked to help <strong>strong</strong> and nature <code>++ code ++</code> thrive. As the <i>italic</i> leading conservation <em>emphasized,</em> WWF works in nearly 100 <mark>marked.</mark>
+		At <small>small</small> level, we collaborate <q>for quatation</q> with people <del>DELETED</del> the world to <bdo dir="rtl">for reverse the word madam</bdo> develop and <br>deliver <ins>UNDERLINE</ins> solutions that <sub>SUPERUP</sub> communities, <sup>SUBDOWN</sup> and the places in which they live.
 		</p>
-		<h1>test</h1>
-		<hr>
-		<h3>Quatation and citation<h3>
-	<blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp"> element defines a section that is quoted from another source.</blockquote>
-	<q>for quoted</q>
-	<br>
-	<abbr title="Automated teller machine">ATM</abbr>
-	<br>
+		<p>Use <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy something.</p>
+				
+		<h3 style="color:red;">address<h2>
 	<address>
 		123,street<br>
 		tambaram<br>
 		chennai<br>
 	</address>
-	<br>
-	<p><a href="#c3">for showing <cite>title</cite> of the work</a></p>
-	<br>
-	<!-- just a comment -->
-	<p><bdo dir="rtl">for reverse the word madam</bdo></p>
-	<hr>
-	<button>new button</button>
-	<hr>
-	<h3>Image</h3>
-	<img src="testimage.png" alt="testimage" height="250" width="200">
 	
+	<h3 style="color:red;">Abbreviation<h2>
+	<p><abbr title="Automated teller machine">ATM</abbr> - is abbr </p>
+		
+	<hr>
+	
+		<h3> links </h3>
+		<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_self"> w3 link within tab</a> <br><br>
+		<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank"  rel="noopener noreferrer nofollow" > w3 link another tab</a><br><br>
+	<!--	<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_parent"> w3 link parent</a> <br><br> -->
+	<!--	<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_top"> w3 link top</a> -->
+
+
+		<p><a href="#H1">Jump to H1 tag start of the page</a></p>
+    <hr>
+	<h3 id="image">Image</h3>
+	<img src="testimage.png" alt="Street" height="100%" width="600"  title="street">
+	<h3 id="audio">Audio</h3>
+	
+	<audio src="test.mp3" controls></audio>
+	
+	<br><br>
+	
+	<audio controls>
+		<source src="test.ogg" type="audio/ogg">
+		<source src="test2.mp3" type="audio/mpeg">
+	</audio>
+	
+	<h3 id = "video"> Video</h3>
+	<video src="example.webm" controls></video>
+	
+	<br><br>
+	
+	<video controls>
+      <source src="example.webm" type="video/ogg">
+      <source src="example.mp4" type="video/mp4">
+	  <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+	<hr>
+	<footer>
+	<br>
+		<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+		 Standing on the River Thames, London has been a major settlement for two millennia, <br>its history going back to its founding by the Romans, who named it Londinium.
+		</p>
+	<br>
+	</footer>
 	</body>
 </html>
+
