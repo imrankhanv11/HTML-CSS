@@ -2,11 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Html Structure</title>
+		<title>TABLE</title>
 		<style>
 		table,tr,td,th{
 			border : 1px solid black;
 			border_collape : collapes;
+		}
+		tr:nth-child(even){
+			background-color:gray;
 		}
 		</style>
 	</head>
@@ -73,7 +76,11 @@
 <h3>table row span</h3>
 <br>
 
-<table style="width:76%">
+<table id="colgroupss" style="width:76%">
+	<colgroup>
+		<col span="1" style="background-color:yellow">
+		<col span="1" style="background-color:pink">
+	</colgroup>
 	<tr>
 		<th>s1</th>
 		<td>value1</td>
@@ -85,6 +92,13 @@
 	<tr>
 		<td>value3</td>
 	</tr>
+	<tr>
+		<th rowspan="2">s2</th>
+		<td>value2</td>
+	</tr>
+	<tr>
+		<td>value3</td>
+	</tr
 </table>
 
 	</body>
