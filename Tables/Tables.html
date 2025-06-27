@@ -6,17 +6,17 @@
 		<style>
 		table,tr,td,th{
 			border : 1px solid black;
-			border_collape : collapes;
+			border-collapse : collapse;
 		}
-		tr:nth-child(even){
-			background-color:gray;
+		thead{
+			background-color:pink;
 		}
 		</style>
 	</head>
 	<body>
 	<h3>table</h3>
 	
-	<table style="width:50%;">
+	<table style="width:50%;" summary="This is summary">
   <tr>
     <th>Company</th>
     <th>Contact</th>
@@ -98,8 +98,48 @@
 	</tr>
 	<tr>
 		<td>value3</td>
-	</tr
+	</tr>
 </table>
+<br>
+<table style="width:75%">
+	
+	<caption>Head,Body,Foot</caption>
+	<thead>
+	<tr>
+		<th>col1</th>
+		<th>col2 </th>
+		<th>col3 </th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	<tr>
+		<td>v1</td>
+		<td>v2</td>
+		<td>v3</td>
+	</tr>
+	
+	<tr>
+		<td>vv1</td>
+		<td>vv2</td>
+		<td>vv3</td>
+	</tr>
+	
+	<tr>
+		<td>w1</td>
+		<td>w2</td>
+		<td>w3</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<td colspan="3" style="text-align:center;">Three row</td>
+	</tfoot>
+</table>
+<details>
+	<summary>click and open</summary>
+	<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
 
 	</body>
 </html>
+
