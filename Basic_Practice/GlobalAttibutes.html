@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Global Attibutes</title>
+		<style>
+			#H1id{
+				color:Red;
+			}
+			.Hclass{
+				color:Green;
+			}
+			.h2class1{
+				color:orange;
+			}
+			.h2class2{
+				background-color:black;
+			}
+			h1, h2 {
+				font-family: Arial, sans-serif;
+			}
+			.invisible {
+				visibility: hidden;
+			}
+			
+			.tooltip-text {
+				visibility: hidden;
+				position: absolute;
+				z-index: 1;
+				width: 100px;
+				color: black;
+				background-color: pink;
+				padding: 5px;
+			}
+			.hover-text:hover .tooltip-text {
+				visibility: visible;
+			}
+			.hover-text {
+				position: relative;
+				display: inline-block;
+				margin: 40px;
+				text-align: center;
+			}
+			.value{
+			  top: -32px;
+			  left: -45%;
+			}
+		</style>
+		<script>
+			function startDrag(event) {
+				event.dataTransfer.setData("text", event.target.id);
+			}
+			function allowDrop(event) {
+				event.preventDefault();
+			}
+			function handleDrop(event) {
+				event.preventDefault();
+				const draggedId = event.dataTransfer.getData("text");
+				const draggedElement = document.getElementById(draggedId);
+				event.target.appendChild(draggedElement);
+			}
+		</script>
+	</head>
+	<body>
+	<h1 tabindex="1" style="text-align:center;">---Id and Class---</h1>
+	<h1 id="H1id">Using Id</h1>
+	<h1 class="Hclass">Using Class</h1>
+	<h2 class="Hclass">Using same Class</h2>
+	<h2 class="h2class1 h2class2">Using Two classes</h2>
+	<hr>
+	<h1 tabindex="2" style="text-align:center;">---In line style---</h1>
+	<h1 style="color: darkblue; font-family: Arial; text-align: center;">Welcome</h1>
+	<p style="font-size: 18px; line-height: 1.5; color: #333333;">A tooltip in HTML is a small pop-up box or text that appears when a user hovers over an element such as a button, link,
+	or image. Tooltips are often used to provide additional information about the element or give the user context. We can create a tooltip using several methods, 
+	including the title attribute, CSS hover effects, and CSS pseudo-elements.</p>
+	<img src="Img/headingtag.png" style="border-radius: 20px; box-shadow: 2px 2px 10px black; height:50%; width:30%" alt="Sample Image"><br><br>
+	<button style="background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 15px;">Click Me</button><br><br>
+	<div style="background: pink; padding: 20px; border-radius: 15px; text-align:center;">Container</div>
+	<hr>
+	<h1 tabindex="3"style="text-align:center;">---Tooltip---</h1>
+	<h3>Using Title</h3>
+	<p title="Tooltip para">Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.
+	Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.
+	Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.</p>
+	<br>
+	<div class="hover-text">Hover Me
+		<span class="tooltip-text value">Tooltip Text</span>
+	</div>
+	<hr>
+	<h1 tabindex="4" style="text-align:center;">---Content Edit---</h1>
+	<p contenteditable="true">This is a paragraph. It is editable. Try to change this text.</p>
+	<hr>
+	<h1 tabindex="5" style="text-align:center;">---Drag and Drop---</h1>
+	<img id="imageToDrag" draggable="true" ondragstart="startDrag(event)" src="Img/street.png" style="height:200px; width:200px;"><br>
+	<div id="dropZone" ondrop="handleDrop(event)" ondragover="allowDrop(event)" style="border: 3px solid black; height:200px; width:300px;" title="Drop your image here"></div>
+	<hr>
+	<h1 tabindex="6" style="text-align:center;">---Visibility---</h1>
+	
+	<div>This will be shown--below messge will be hidden but take space</div>
+	<div class="invisible">
+	<p title="Tooltip para">Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.
+	Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.
+	Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.</p>
+	</div>
+	<br>
+	<details>
+	<summary>Click to reveal</summary>
+	<p title="Tooltip para">Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.
+	Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.
+	Tooltips enhance user experience by providing additional information. They can be created using the `title` attribute for 
+	simplicity,CSS hover effects for customization, or CSS pseudo-elements for advanced styling. Each method offers unique benefits, 
+	enabling effective context delivery in web applications.</p>
+	</details>
+	</body>
+</html>
+
