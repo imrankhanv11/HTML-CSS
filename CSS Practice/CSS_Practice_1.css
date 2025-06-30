@@ -16,6 +16,16 @@ h1{
 }#alright{
 	text-align: right;
 }
+/* groping selector*/
+
+.size2, .size3, .size4, .size5, .size6, .size7{
+	font-size: 1.5em;
+}
+
+/* universal selector */
+*{
+	font-style: normal;
+}
 div {
   border: 1px solid black;
   padding: 10px;
@@ -91,4 +101,106 @@ object{
 }
 #canva{
 	border: solid red 4px;
+}
+
+#over{
+	text-decoration-line: overline;
+	text-decoration-color: red;
+	text-decoration-style: double;
+	text-decoration-thickness: 2px;
+}
+#through{
+	text-decoration-line: line-through;
+	text-decoration-color: green;
+	text-decoration-style: dashed;
+	text-decoration-thickness: 3px;
+}
+#underline{
+	text-decoration-line: underline;
+	text-decoration-color: red;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 2px;
+}
+#doubleline{
+	text-decoration: overline underline pink dotted 4px;
+}
+
+.size{
+	font-size: 3em;
+}
+.size2 {
+  font-family: "Times New Roman", serif;
+}
+
+.size3 {
+  font-family: Arial, sans-serif;
+}
+
+.size4 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.size5 {
+  font-family: "Brush Script MT", cursive;
+}
+
+.size6 {
+  font-family: Georgia, serif;
+}
+
+.size7 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+#upper{
+	text-transform: uppercase;
+}
+#lower{
+	text-transform: lower;
+}
+#cap{
+	text-transform: capitalize;
+}
+.intent{
+	text-indent: 50px;
+}
+#spacechar{
+	font-size: 1.2em;
+	letter-spacing: 5px;
+}
+.lineheight{
+	line-height: 0.5;
+}
+#wordspace{
+	word-spacing: 20px;
+}
+.whitespace{
+	white-space: nowrap;
+}
+#textshadow{
+	text-shadow: 3px 3px purple;
+	background-color: white;
+	color: black;
+	font-size: 30px;
+}
+
+#textshadow2{
+	text-shadow: 2px 2px 5px red;
+	background-color: white;
+	color: black;
+	font-size: 30px;
+}
+#italic {
+  font-style: italic;
+}
+
+#oblique {
+  font-style: oblique;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#smallcaps {
+  font-variant: small-caps;
 }
