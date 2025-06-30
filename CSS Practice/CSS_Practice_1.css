@@ -1,0 +1,94 @@
+/* external css */
+
+/* element selector */
+h1{
+	color:red;
+	background-color: #ffffe6;
+}
+
+/* id selector */
+#alcenter{
+	text-align: center;
+}
+#alleft{
+	text-align: left;
+	
+}#alright{
+	text-align: right;
+}
+div {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+  background-color:pink;
+}
+#alstart{
+	text-align: start;
+}
+#alend{
+	text-align: end;
+}
+
+dialog{
+	padding:30px;
+}
+summary{
+	text-align: center;
+}
+/* class selector */
+.right{
+	text-align-last: right;
+}
+.left{
+	text-align-last: left;
+}
+.justify{
+	text-align-last: justify;
+}
+#article1{
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+}
+footer{
+	background-color:black;
+	color: white;
+	padding: 20px;
+}
+
+li {
+  float: left;
+}
+nav li{
+	padding : 20Px;
+	list-style-type : none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+
+figure{
+	text-align : center;
+}
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 12px;
+  text-align: center;
+}
+
+object{
+	border : solid black 4px;
+}
+#canva{
+	border: solid red 4px;
+}
