@@ -10,13 +10,15 @@
 <body>
   <form>
     <fieldset>
+      <legend>Form</legend>
+    <fieldset>
       <legend>Form for apply</legend>
 
       <label for="name">Name :</label>
-      <input type="text" id="name"><br><br>
+      <input type="text" id="name" maxlength="20" autofocus><br><br>
 
       <label for="email">Email :</label>
-      <input type="email" id="email"><br><br>
+      <input type="email" id="email" required><br><br>
 
       <label for="password">password :</label>
       <input type="password" id="password"><br><br>
@@ -36,15 +38,86 @@
       <label for="c#">C#</label><br><br>
 
       <label for="Country">Country :</label>
-      <select multiple size="2" id="Country">
+      <select id="Country">
         <option value="India">India</option>
         <option value="US">US</option>
-        <option value="UK">UK</option>
+        <option value="UK" selected>UK</option>
       </select><br><br>
 
-      <input type="submit">
+      <lable for="option">Options :</lable><br>
+      <input list="options" id="option">
+      <datalist id="options">
+        <option value="option1"></option>
+        <option value="option2"></option>
+        <option value="option3"></option>
+        <option value="option4"></option>
+      </datalist><br><br>
+
+      <label for="month">dob month : </label><br>
+      <input type="month" id="month" name="month"><br><br>
+
+
+      <label for="color">Fav colour : </label>
+      <input type="color" id="color" name="color"><br><br>
+
+
+      <label for="date">Dob : </label><br>
+      <input type="date" id="date" name="date"><br><br>
+
+      <label for="datetime">current date time : </label><br>
+      <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+      <label for="file">Choose file : </label><br>
+      <input type="file" id="file" name="file" multiple><br><br>
+
+      <label for="hidden">hidden check : </label><br>
+      <input type="hidden" id="hidden" name="hidden"><br><br>
+
+      <label for="week">week : </label><br>
+      <input type="week" id="week" name="week"><br><br>
+
+      <label for="gsearch">Search Google:</label><br>
+      <input type="search" id="gsearch" name="gsearch"><br><br>
+
+      <label for="mobilno">Mobil number :</label><br>
+      <input type="tel" id="mobilno" pattern="[0-9]{10}"><br><br>
+
+      <label for="exp">Experence :</label><br>
+      <input type="number" id="exp"  value="2" min="0" max="50"><br><br>
+
+      <label for="Range">Satisfaction level :</label><br>
+      <input type="range" id="Range" min="1" max="20" value="15"><br>
+
+      <label for="feedback">Feedback :</label><br>
+      <textarea name="message" id="feedbacck" rows="8" cols="20"
+        placeholder="Enter the feedback hear"></textarea><br><br>
+
+      <input type="submit"><br><br>
+
+      <input type="reset" value="Reset Form">
+
 
     </fieldset>
+    <fieldset>
+      <legend>Some More Tags</legend>
+
+      <lebel for="prog">Progress :</lebel><br>
+      <progress id="prog" value="10" min="0" max="50"></progress><br>
+
+      <label for="meter">Meter :</label><br>
+      <meter value="30" min="1" max="100"></meter><br><br>
+      
+      <label for="image">Image : </label><br>
+      <input type="image" src="Img/headingtag.png" alt="Submit" width="48" height="48"><br><br>
+
+      <label for="read">for readonly :</label><br>
+      <input type="text" id="read" readonly value="readonly"><br><br>
+
+      <label for="disable"> Disable :</label><br>
+      <input type="text" id="disable" disabled value="disable"><br><br>
+    </fieldset>
+  </fieldset>
+
   </form>
 </body>
 
