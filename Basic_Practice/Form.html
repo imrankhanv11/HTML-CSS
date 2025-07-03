@@ -34,9 +34,11 @@
 				</select><br><br>
 
 				<button type="submit">Submit</button>
+				<button type="reset">reset</button>
 			</fieldset>
 		</form>
 
+		<hr>
 		<hr>
 		<form>
 			<fieldset>
@@ -47,7 +49,7 @@
 				<label for="email">Email : </label><br>
 				<input type="email" id="email" name="email-id"><br><br>
 
-				<h4> Choose your vehicle have :</h4>
+				<label>Choose your vehicle have :</label><br>
 				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 				<label for="vehicle1"> I have a bike</label><br>
 				<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -59,9 +61,8 @@
 				<label for="color">Fav colour : </label>
 				<input type="color" id="color" name="color"><br><br>
 
-
 				<label for="date">Dob : </label><br>
-				<input type="date" id="date" name="date"><br><br>
+				<input type="date" id="date" name="date" value="2025-07-01"><br><br>
 
 
 				<label for="datetime">current date time : </label><br>
@@ -69,7 +70,7 @@
 
 
 				<label for="file">Choose file : </label><br>
-				<input type="file" id="file" name="file"><br><br>
+				<input type="file" id="file" name="file1" multiple size="2"><br><br>
 
 
 				<label for="hidden">hidden check : </label><br>
@@ -85,7 +86,7 @@
 
 
 				<label for="number">Lucky number : </label><br>
-				<input type="number" id="number" name="number"><br><br>
+				<input type="number" id="number" name="number" min="1" max="10"><br><br>
 
 
 				<label for="password">your password : </label><br>
