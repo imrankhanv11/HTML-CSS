@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 04-07</title>
+    <style>
+        .ta,.ta tr, .ta td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+       .ta td {
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>picture</h1>
+    <picture>
+        <source srcset="Images/png/street.png" media="(min-width:650px)">
+        <source srcset="Images/webp/webpimage.webp" media="(min-width:465px)">
+        <img src="Images/png/500kb.png " alt="baseimage">
+    </picture>
+    <hr>
+    <h1 popover id="pop"> helloooo</h1>
+    <button popovertarget="pop">click</button>
+    <hr>
+    <h1>Video</h1>
+    <video src="Videos/VideoforSub.mp4" type="video/mp4" controls muted style="width: 100px; height: 200px"></video>
+    <hr>
+    <video controls muted loop style="width: 200px; height: 200px;" poster="Images/png/street.PNG">
+        <source src="Videos/VideoforSub.mp4" type="video/mp4">
+        <track src="Videos/sub.vtt" kind="subtitles" label="english" srclang="en">
+        </track>
+    </video>
+    <hr>
+    <h1>iframe</h1>
+    <iframe src="https://www.example.com/" height="200px" width="300"></iframe>
+    <br>
+    <iframe
+        srcdoc="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus culpa reprehenderit, vitae fuga ab explicabo quaerat modi voluptatibus commodi harum voluptatum eum distinctio assumenda magnam minus, atque odio provident?</p>"></iframe>
+    <br>
+    <embed src="Images/png/street.PNG" type="image/png">
+    <br>
+    <embed src="https://www.youtube.com/embed/tgbNymZ7vqY">
+
+    <br>
+    <!-- for muted autoplay=1 & mute=1-->
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?mute=1">
+    </iframe>
+
+    <hr>
+    <h1>Table practice</h1>
+    <table class="ta">
+        <caption>Practice</caption>
+        <tr>
+            <td colspan="2">value1</td>
+            <td rowspan="3">value2</td>
+        </tr>
+        <tr>
+            <td colspan="2">value3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">value4</td>
+            <td>value5</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="padding: 0;" >
+                <table>
+                    <tr>
+                        <td style="border: hidden;">value6</td>
+                    </tr>
+                </table>
+            </td>
+            <td>value7</td>
+        </tr>
+        <tr>
+            <td rowspan="2">value8</td>
+            <td>value9</td>
+        </tr>
+        <tr>
+            <td>value10</td>
+            <td rowspan="2">value11</td>
+        </tr>
+        <tr>
+            <td>value12</td>
+            <td>value13</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+
+    </table>
+
+</body>
+
+</html>
+
+<!--
+<img 
+  src="Images/png/500kb.png"
+  srcset="Images/png/street.png 500w, Images/png/street.png 1000w, Images/webp/webpimage.webp 2000w" 
+  sizes="(max-width: 600px) 100vw, 50vw" 
+  alt="Responsive image" 
+  style="width: 100%; height: auto;">
+
+  <picture>
+  <source 
+    srcset="Images/webp/webpimage.webp" 
+    type="image/webp" 
+    media="(min-width: 1000px)">
+  <source 
+    srcset="Images/png/street.png" 
+    type="image/png" 
+    media="(min-width: 500px)">
+  <img 
+    src="Images/png/500kb.png" 
+    alt="Responsive image" 
+    style="width: 100%; height: auto;">
+</picture>
+
+<picture>
+  <source srcset="images/large-window.webp" type="image/webp" media="(min-width: 1000px)">
+  
+  <source srcset="images/tablet-image.png" type="image/png" media="(min-width: 600px)">
+  
+  <img src="images/mobile-image.jpg" alt="Responsive design image" style="width: 100%; height: auto;">
+</picture>
+-->
