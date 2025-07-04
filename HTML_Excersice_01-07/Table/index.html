@@ -13,8 +13,9 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
-        td{
-            padding:8px;
+
+        td {
+            padding: 8px;
             text-align: center;
         }
     </style>
@@ -45,14 +46,22 @@
         <tr>
             <td rowspan="3">Value</td>
             <td colspan="2">Value</td>
-            <td rowspan="2">Value</td>
+            <td rowspan="3" style="padding: 0;">
+                <table style="border: hidden">
+                    <tr>
+                        <td style="padding: 17px;">value1</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 17px;">value2</td>
+                    </tr>
+                </table>
+            </td>
         </tr>
         <tr>
             <td colspan="2">Value</td>
         </tr>
         <tr>
             <td colspan="2">Value</td>
-            <td>Value</td>
         </tr>
         <tr>
             <td>Value</td>
@@ -61,15 +70,16 @@
             <td>Value</td>
         </tr>
     </table>
+
     <hr>
     <table>
         <tr>
             <td rowspan="3">Value</td>
-            <td colspan="4">Value</td>
+            <td colspan="3">Value</td>
         </tr>
         <tr>
             <td colspan="2">Value</td>
-            <td rowspan="2" colspan="2">Value</td>
+            <td rowspan="2">Value</td>
         </tr>
         <tr>
             <td colspan="2">Value</td>
@@ -78,62 +88,10 @@
             <td rowspan="2">Value</td>
             <td rowspan="2">Value</td>
             <td rowspan="2">Value</td>
-            <td colspan="2">Value</td>
-        </tr>
-        <tr>
-            <td colspan="2">Value</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Value</td>
-            <td colspan="2">Value</td>
-            <td colspan="2" rowspan="2">Value</td>
-        </tr>
-        <tr>
-            <td colspan="2">Value</td>
-        </tr>
-        <tr>
-            <td colspan="2">Value</td>
-            <td colspan="2">Value</td>
+            <td>Value</td>
         </tr>
         <tr>
             <td>Value</td>
-            <td>Value</td>
-            <td>Value</td>
-            <td colspan="2">Value</td>
-        </tr>
-    </table>
-    <hr>
-    <table>
-        <tr>
-            <td rowspan="6">value</td>
-            <td colspan="3">value</td>
-        </tr>
-        <tr>
-            <td colspan="2" rowspan="2">value1</td>
-            <td rowspan="5">valuetest</td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-            <td colspan="2" rowspan="2">value</td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-            <td rowspan="4">value</td>
-            <td rowspan="4">value11</td>
-            <td rowspan="4">value12</td>
-            
-        </tr>
-        <tr>
-            <td rowspan="2">value33</td>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-            <td>value33</td>
         </tr>
         <tr>
             <td rowspan="6">value</td>
@@ -150,19 +108,17 @@
         </tr>
         <tr>
             <td rowspan="2" colspan="2">valuell</td>
-        
         </tr>
         <tr>
         </tr>
         <tr>
-            <td rowspan="2">value</td>
-            <td rowspan="2">value</td>
-            <td rowspan="2">value</td>
-            <td rowspan="2">value</td>
-        </tr>
-        <tr>
+            <td>Value</td>
+            <td>Value</td>
+            <td>Value</td>
+            <td>Value</td>
         </tr>
     </table>
+    
 </body>
 
 </html>
