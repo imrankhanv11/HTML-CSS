@@ -1,0 +1,32 @@
+#div1 {
+    height: 50px;
+    width: 25%;
+    background-color: pink;
+}
+
+#div1 p {
+    text-align: center;
+}
+
+#div2 {
+    height: 100px;
+    max-width: 600px;
+    /* to avoid the horizontal scroll bar if width if max then window screen */
+    background-color: black;
+}
+
+#div3 {
+    background-color: aqua;
+    max-width: 500px;
+    max-height: 100px;
+}
+
+#fakediv{
+    height: 100px;
+}
+#div4{
+    /* no use becuase content is bigger then the min-height and width*/
+    background-color: blanchedalmond;
+    min-height: 10px;
+    min-width: 20px
+}
