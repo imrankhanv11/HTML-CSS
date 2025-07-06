@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <picture>
+        <source srcset="1.bmp" media="(min-width:1024px)">
+        <source srcset="2.jpg" media="(min-width:768px)">
+        <source srcset="3.jpg">
+        <img src="4.jpg" alt="img" title="test">
+    </picture>
+    <br><br>
+    <select name="something" id="sel">
+        <optgroup label="one">
+            <option value="1">a</option>
+            <option value="1">a</option>
+        </optgroup>
+        <optgroup label="one">
+            <option value="1">a</option>
+            <option value="1" selected>check</option>
+        </optgroup>
+    </select>
+    <hr>
+    <input list="data">
+    <datalist id="data">
+        <option value="cc"></option>
+        <option value="a"></option>
+        <option value="a"></option>
+    </datalist>
+    <br><br>
+    <input type="checkbox" name="css" id="html"><label for="html">html</label><br>
+    <input type="checkbox" name="css" id="css" checked><label for="css">css</label>
+    <br><br>
+    <input type="radio" id="rad" name="v"><label for="rad">one</label>
+    <input type="radio" id="rad1" name="v"><label for="rad1">one</label>
+    <input type="radio" id="rad2" name="v" checked><label for="rad2">one</label>
+</body>
+
+</html>
