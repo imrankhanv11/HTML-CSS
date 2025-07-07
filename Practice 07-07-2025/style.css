@@ -186,6 +186,10 @@ input:placeholder-shown {
     color: white;
 }
 
+input:autofill{
+    border: 2px solid pink;
+}
+
 #element h1::before {
     content: "@@@ ";
     background-color: black;
