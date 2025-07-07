@@ -1,0 +1,238 @@
+a[href] {
+    background-color: aquamarine;
+}
+
+div[title="value-fortest"] {
+    background-color: bisque;
+}
+
+div[title~="flower"] {
+    background-color: brown;
+    color: white;
+}
+
+div[title|="value2"] {
+    background-color: chartreuse;
+}
+
+div[title^=mm] {
+    background-color: darkmagenta;
+    color: wheat;
+}
+
+div[title$=end] {
+    background-color: dimgrey;
+    color: wheat;
+}
+
+div[title*=tet] {
+    background-color: gold;
+}
+
+#forlink:link {
+    background-color: white;
+    color: black;
+}
+
+#forlink:visited {
+    background-color: red;
+    color: white;
+}
+
+#forlink:hover {
+    font-size: 30px;
+    color: orange;
+}
+
+#forlink:active {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+a:any-link {
+    font-size: 50px;
+}
+
+#forchild p:first-of-type {
+    color: blue;
+}
+
+#forchild p:last-of-type {
+    font-size: 10px;
+}
+
+#forchild :nth-child(3) {
+    background-color: black;
+    color: wheat;
+}
+
+#forchild :nth-last-child(3) {
+    background-color: red;
+    color: white;
+}
+
+#forchild h1:nth-of-type(2) {
+    background-color: pink;
+}
+
+#forchild :nth-of-type(3) {
+    font-size: 20px;
+    background-color: beige;
+}
+
+#forchild :nth-last-of-type(3) {
+    background-color: black;
+    color: white;
+}
+
+#forchild h1:nth-last-of-type(2) {
+    background-color: lightslategrey;
+}
+
+#forchild :first-child {
+    font-size: 20px;
+}
+
+#nthchild p:nth-child(2) {
+    background-color: aquamarine;
+}
+
+#nthchild :nth-child(1) {
+    background-color: indigo;
+    color: white;
+}
+
+#nthchild p:nth-last-child(2) {
+    background-color: skyblue;
+}
+
+#nthchild :nth-last-child(4) {
+    font-size: 30px;
+}
+
+#nthchild h1:nth-of-type(2) {
+    background-color: antiquewhite;
+}
+
+#nthchild p:nth-last-of-type(3) {
+    background-color: brown;
+}
+
+#nthchild p:nth-of-type(3) {
+    background-color: black;
+}
+
+
+/*for spical*/
+
+#nthchild :nth-child(3) {
+    background-color: red;
+}
+
+#nthchild p:nth-of-type(2) {
+    color: white;
+}
+
+#nthchild :nth-last-child(7) {
+    font-size: 20px;
+}
+
+#nthchild p:nth-last-of-type(5) {
+    padding: 5px;
+}
+
+/* for form */
+input:checked {
+    outline: 2px solid red;
+}
+
+input[type=radio]:default {
+    outline: 5px solid black;
+}
+
+input:disabled {
+    outline: 2px red dotted;
+}
+
+input:focus {
+    background-color: aquamarine;
+}
+
+form:focus-within {
+    border: 2px solid black;
+    background-color: beige;
+    color: black;
+}
+
+h1:has(+ p) {
+    text-decoration: underline;
+}
+
+input:in-range {
+    background-color: gold;
+}
+
+input:required {
+    background-color: red;
+}
+
+input:read-only {
+    background-color: black;
+}
+
+input:placeholder-shown {
+    background-color: brown;
+    color: white;
+}
+
+#element h1::before {
+    content: "@@@ ";
+    background-color: black;
+    color: wheat;
+}
+
+#element h1::after {
+    content: " ====";
+    background-color: red;
+    color: white;
+}
+
+#element ::backdrop {
+    background-color: aquamarine;
+}
+
+#fileUpload:read-only{
+    background-color: white;
+}
+
+#element ::file-selector-button{
+    background-color: red;
+}
+
+#element ::first-line{
+    background-color: antiquewhite;
+    color: red;
+}
+
+#element ::first-letter{
+    font-size: 30px;
+    color: black;
+}
+
+/* not working */
+::grammar-error{
+    text-decoration: line-through;
+    text-decoration-color: blueviolet;
+}
+
+::marker{
+    content: "%";
+    font-size: 50px;
+    color: purple;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
