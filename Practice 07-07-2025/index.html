@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>attribute Selector</h1>
+        <a href="#">just a link to used for attribute selector</a>
+
+        <div title="value-fortest">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum cumque impedit, doloribus in
+                provident maiores enim vel ipsa, facere omnis error rerum, quo sapiente libero a fugit numquam corrupti.
+            </p>
+        </div>
+        <div title="value-fortest flower">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum cumque impedit, doloribus in
+                provident maiores enim vel ipsa, facere omnis error rerum, quo sapiente libero a fugit numquam corrupti.
+            </p>
+        </div>
+        <div title="value2-fortest">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum cumque impedit, doloribus in
+                provident maiores enim vel ipsa, facere omnis error rerum, quo sapiente libero a fugit numquam corrupti.
+            </p>
+        </div>
+        <div title="mmvalue666-fortest">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum cumque impedit, doloribus in
+                provident maiores enim vel ipsa, facere omnis error rerum, quo sapiente libero a fugit numquam corrupti.
+            </p>
+        </div>
+        <div title="value5-fortestend">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum cumque impedit, doloribus in
+                provident maiores enim vel ipsa, facere omnis error rerum, quo sapiente libero a fugit numquam corrupti.
+            </p>
+        </div>
+        <div title="value-fortetst-te">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorum cumque impedit, doloribus in
+                provident maiores enim vel ipsa, facere omnis error rerum, quo sapiente libero a fugit numquam corrupti.
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h1>Pesudo Clsses</h1>
+        <div>
+            <h2>for link</h2>
+            <a id="forlink" href="#">link</a>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div id="forchild">
+            <h1>in this the first child not work (if the p:first-child) beacuse before p it have h1 intead we use first
+                type of child</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <h1>in this if i use last-child of p then not work (if the p:last-child )beacuse before the p tag it have h1
+            </h1>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div id="nthchild">
+            <h1>in this the first child not work (if the p:first-child) beacuse before p it have h1 intead we use first
+                type of child</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>spcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcial
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <h1>test</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <h1>in this if i use last-child of p then not work (if the p:last-child )beacuse before the p tag it have h1
+            </h1>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <h1>used old code for Pesudo clsses</h1>
+        <form>
+            <fieldset>
+                <legend>Form for apply</legend>
+
+
+                <label>Skills :</label><br>
+                <input type="checkbox" name="Python" id="python" checked>
+                <label for="python">Python</label><br>
+                <input type="checkbox" name="Java" id="java">
+                <label for="java">Java</label><br>
+                <input type="checkbox" name="C#" id="c#">
+                <label for="c#">C#</label><br><br>
+
+
+                <label>Gender :</label><br>
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="name">Name :</label>
+                <input type="text" id="name" maxlength="20" disabled><br><br>
+
+                <label for="exp">Experence :</label><br>
+                <input type="number" id="exp" value="2" min="0" max="50"><br><br>
+
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" required><br><br>
+
+
+                <label for="month">dob month : </label><br>
+                <input type="month" id="month" name="month" readonly><br><br>
+
+
+                <label for="mobilno">Mobil number :</label><br>
+                <input type="tel" id="mobilno" placeholder="1234567890" pattern="[0-9]{10}"><br><br>
+
+            </fieldset>
+
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h1>Pesudo Elements</h1>
+        <div id="element">
+            <h1>for before and after</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto perferendis tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias architecto nulla tempore laudantium
+                a minima error iure magni ex est?</p>
+            <p>spcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcialspcial
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                consectetur accusantium. Debitis quasi distinctio officia molestiae quae et natus animi nulla pariatur
+                laudantium eaque excepturi sit numquam, nemo a laborum?adipisicing elit. Est iusto perferendis tenetur
+                vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolores harum, voluptatem nulla
+                hic quia expedita impedit perspiciatis quisquam id voluptas commodi labore cupiditate voluptate
+                distinctio blanditiis, ipsum nam? Sed? sit amet consectetur adipisicing elit. Est iusto perferendis
+                tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <p>Lorem ipsum dolor sit amet conse Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                adipisci officia itaque commodi cupiditate quasi consequatur perspiciatis libero pariatur ad ipsam, id
+                ducimus quisquam repellat, maxime dicta a quo laudantium.ctetur adipisicing elit. Est iusto perferendis
+                tenetur vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+
+            <p>Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed tenetur et odio culpa
+                facilis dolore voluptates amet, fuga voluptas repudiandae libero qui assumenda totam consectetur nihil
+                esse eligendi iste exercitationem!sit amet consectetur adipisicing elit. Est iusto perferendis tenetur
+                vitae vero
+                impedit, magnam non ducimus ipsum aliquid.</p>
+            <h1>for before and after</h1>
+            <hr>
+            <dialog popover id="open">
+                <button popovertarget="open" popovertargetaction="hide">click me to close</button>
+            </dialog>
+            <button popovertarget="open" popovertargetaction="show">click</button>
+
+
+            <form>
+                <label for="fileUpload">Upload file: </label>
+                <input type="file" id="fileUpload" />
+            </form>
+
+            <hr>
+        </div>
+    </section>
+    <section>
+
+        <p contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, delectus voluptates.
+            Placeat magnam minus
+            accusamus non hic facilis voluptatem sit?</p>
+
+            <ul>
+                <li>value1</li>
+                <li>value1</li>
+                <li>value1</li>
+                <li>value1</li>
+            </ul>
+    </section>
+</body>
+
+</html>
