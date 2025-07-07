@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="keywords" content="HTML, Interim, Question_3,Assesment">
+	
+	<meta name="description" content="HTML Interim Assesment Question_3">
+
+	<meta name="author" content="Imran Khan V">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Question_3</title>
+	<style>
+		table,tr,td,th{
+			border: solid black 1px;
+			border-collapse: collapse;
+			padding: 12px;
+		}
+		td{
+		text-align: center;
+		}
+		tfoot td{
+			text-align: right;
+		}
+		#summary, thead {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<h1>Monthly Budget Table</h1>
+	<table>
+		<caption>Monthly Budget</caption>
+		<thead>
+			<tr>
+			<th>Category</th>
+			<th>Estimated Amount</th>
+			<th>Actual Amount</th>
+			<th>Difference</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+			<th>Rent</th>
+			<td>10000</td>
+			<td>10000</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<th>Groceries</th>
+			<td>5000</td>
+			<td>5500</td>
+			<td>-500</td>
+		</tr>
+		<tr>
+			<th>Utilities</th>
+			<td>3000</td>
+			<td>3200</td>
+			<td>-200</td>
+		</tr>
+		<tr>
+			<th>Transportation</th>
+			<td>1500</td>
+			<td>1700</td>
+			<td>-200</td>
+		</tr>
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<th rowspan="3" id="summary">summary</th>
+				<td colspan="3">Total Estimated Amount: 19,500</td>
+			</tr>
+			<tr>
+				<td colspan="3">Total Actual Amount: 20400</td>
+			</tr>
+			<tr>
+				<td colspan="3">Total Difference Amount: 900</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

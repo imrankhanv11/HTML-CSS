@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="keywords" content="HTML, Interim, Question_4,Assesment">
+	
+	<meta name="description" content="HTML Interim Assesment Question_4">
+
+	<meta name="author" content="Imran Khan V">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Question_4</title>
+</head>
+<body>
+	<form id="Form1">
+		<fieldset>
+			<legend>User's Form</legend>
+			<label for="country">Country :</label>
+			<input type="text" value="India" name="countryvalue" id="country" disabled><br><br>
+			
+			<!-- Not give max for in question mentions etc. so I not give max -->
+			<label for="num">Enter the number :</label>
+			<input type="number" name="numvalue" id="num" min="0" step="5"><br><br>
+			
+			<label for="dropdown">Vehicles :</label>
+			<select id="dropdown" name="vehiclevalue">
+				<optgroup label="Land Vehicles">
+					<option value="Car">Car</option>
+					<option value="Bus">Bus</option>
+				</optgroup>
+				<optgroup label="Air Vehicles">
+					<option value="Helicopter">Helicopter</option>
+					<option value="Air-Plane">Air-Plane</option>
+				</optgroup>
+				<optgroup label="Water Vehicles">
+					<option value="Small Boat">Small Boat</option>
+					<option value="Ship">Ship</option>
+				</optgroup>
+			</select><br><br>
+			
+			<label for="passwordques">Password :</label>
+			<input type="Password" name="passwordenter" id="passwordques"><br><br>
+			
+			<!-- May reason of editor i can't visully check this right but the code wise it right -->
+			<label for="ProgrammingLanguages">PL Select :</label>
+			<input data="List" id="ProgrammingLanguages">
+			<datalist id="List">
+				<option value="HTML">
+				<option value="CSS">
+				<option value="JavaScript">
+				<option value="Python">
+			</datalist><br><br>
+			
+			
+			<label for="Languages">Programming Languages :</label><br>
+			<input type="checkbox" name="HTMLpl" id="html" checked>
+			<label for="html">HTML</label><br>
+			<input type="checkbox" name="CSSpl" id="css">
+			<label for="css">CSS</label><br>
+			<input type="checkbox" name="JSpl" id="js">
+			<label for="js">JS</label><br>
+			<input type="checkbox" name="Javapl" id="java">
+			<label for="java">Java</label><br><br>
+			
+			<input type="submit" Value="Submit" form="Form1">
+			</select>
+		</fieldset>
+	</form>
+</body>
+</html>
