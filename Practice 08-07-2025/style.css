@@ -184,12 +184,49 @@ h1.inlineblock{
     font-size: 40px;
 }
 
-.float{
+.float1{
     float: right;
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 90px;
+}
+.float2{
+    float: left;
+    height: 80px;
+    width: 90px;
+}
+.float3{
+    float: none;
+    
+    height: 80px;
+    width: 90px;
 }
 
-#clear{
+.float11{
+    float: left;
+    
+    height: 80px;
+    width: 90px;
+}
+#clear11{
+    clear: left;
+}
+
+.float22{
+    float: right;
+    
+    height: 80px;
+    width: 90px;
+}
+#clear22{
     clear: right;
+}
+
+.float33{
+    float: left;
+    
+    height: 80px;
+    width: 90px;
+}
+#clear33{
+    clear: both;
 }
