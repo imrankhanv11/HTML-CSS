@@ -134,6 +134,7 @@ h1.inlineblock{
 .relative{
     position: relative;
     background-color: black;
+    color:white;
     left: 45px;
     top: 30px;
     z-index: -1;
@@ -229,4 +230,12 @@ h1.inlineblock{
 }
 #clear33{
     clear: both;
+}
+
+.overflow{
+    height: 150px;
+    width: 350px;
+    border: 2px solid black;
+    margin: 20px;
+    overflow: auto;
 }
