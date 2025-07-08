@@ -183,3 +183,13 @@ h1.inlineblock{
     font-weight: 960;
     font-size: 40px;
 }
+
+.float{
+    float: right;
+    height: 150px;
+    width: 150px;
+}
+
+#clear{
+    clear: right;
+}
