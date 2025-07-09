@@ -1,3 +1,13 @@
+#flex {
+    border: 2px solid black;
+    padding: 10px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 h1[title|=check] {
     text-align: center;
     background-color: aqua;
@@ -19,20 +29,23 @@ span[title$="ue"] {
 .box {
     text-align: center;
 }
-.container{
+
+.container {
     height: 300px;
     width: 300px;
     border: 2px solid black;
     position: relative;
 }
-.container-item{
+
+.container-item {
     height: 100px;
     border: 2px solid red;
     width: 100px;
     background-color: greenyellow;
     margin: 99px;
 }
-.con-item-list1{
+
+.con-item-list1 {
     height: 50px;
     width: 50px;
     background-color: black;
@@ -41,14 +54,16 @@ span[title$="ue"] {
     top: 0;
     border: 2px solid white;
     bottom: 0;
-    left:0;
+    left: 0;
     right: 0;
 }
-.con-2{
+
+.con-2 {
     margin-top: 5px;
 
 }
-.conitem1{
+
+.conitem1 {
     background-color: pink;
     height: 100px;
     width: 100px;
@@ -57,9 +72,10 @@ span[title$="ue"] {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.horizontal-center{
+
+.horizontal-center {
     background-color: red;
     height: 20px;
     width: 50px;
@@ -69,7 +85,8 @@ span[title$="ue"] {
     margin: 2px;
     transform: translateX(-50%);
 }
-.horizontal-center2{
+
+.horizontal-center2 {
     background-color: red;
     height: 20px;
     width: 50px;
@@ -80,7 +97,8 @@ span[title$="ue"] {
     left: 50%;
     transform: translateX(-50%);
 }
-div[class*="vertical"]{
+
+div[class*="vertical"] {
     background-color: red;
     height: 20px;
     width: 50px;
@@ -89,18 +107,21 @@ div[class*="vertical"]{
     top: 50%;
     margin: 2px;
 }
-.vertical-center1{
+
+.vertical-center1 {
     transform: translateY(-50%);
 }
-.vertical-center2{
+
+.vertical-center2 {
     transform: translateY(-50%);
     right: 0px;
-    
+
 }
-div{
+
+.container, .boxvalues {
     text-align: center;
     text-transform: capitalize;
-    text-decoration:underline wavy green 1px;
+    text-decoration: underline wavy green 1px;
     text-decoration-skip-ink: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: medium;
@@ -110,7 +131,73 @@ div{
     letter-spacing: 2px;
 }
 
-div ::first-letter{
+.container ::first-letter {
     color: white;
     text-shadow: 1px 1px 2px black;
+    font-size: 20px;
+}
+.boxvalues ::first-letter {
+    color:rebeccapurple;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
+}
+
+.conitem1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxvalues {
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+}
+
+.index {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+#flex>div {
+    margin: 5px;
+}
+
+.zbox{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    position: relative;
+    margin: 2px;
+}
+
+.box1{
+    background-color: gold;
+    top: 50%;
+    left: 80px;
+    z-index: -1;
+}
+.box2{
+    background: red;
+    top: 18px;
+    left: 160px;
+    z-index: 2;
+}
+.box3{
+    background: rgb(12, 65, 35);
+    left: 120px;
+    z-index: 1;
 }
