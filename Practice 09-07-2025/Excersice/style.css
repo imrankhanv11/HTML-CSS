@@ -186,11 +186,12 @@ hr {
 aside{
     float:right;
     height: 150px;
-    width: 30%;
-    border: 2px solid black;
+    width: 20%;
+    border: 2px solid purple;
     border-radius: 8px;
     margin-right: 5px;
     margin-bottom: 5px;
+    overflow: auto;
 }
 aside div{
     text-align: justify;
