@@ -1,0 +1,31 @@
+table,
+td {
+    border: 2px solid red;
+    padding: 15px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tr:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+
+tr:hover {
+    background-color: rgb(93, 93, 172);
+    color: hotpink;
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+}

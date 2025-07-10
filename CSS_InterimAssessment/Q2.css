@@ -1,0 +1,39 @@
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: bisque;
+    min-height: 38px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10%;
+    padding: 5px;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: red;
+    font-variant: small-caps;
+    font-size: large;
+}
+
+nav>ul {
+    padding-top: 10px;
+}
+
+a:active{
+    text-decoration: wavy green underline 1px;
+}
+
+a:hover{
+    color: black;
+    font-size: larger;
+    font-style: oblique;
+}
+h1{
+    text-align: center;
+}
