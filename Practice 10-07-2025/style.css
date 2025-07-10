@@ -31,11 +31,12 @@ section aside {
 section aside div:first-child {
     height: 70px;
     width: 130px;
-    border: 1px ridge black;
+    border: 2px ridge black;
     border-radius: 4px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 10px;
     background-image: url(street.PNG);
     background-size: contain;
 }
