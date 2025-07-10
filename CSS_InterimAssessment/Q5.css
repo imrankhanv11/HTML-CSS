@@ -1,0 +1,41 @@
+div {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+span {
+    visibility: hidden;
+}
+
+/* i try to do visible and hiden also try display none  but not get acutal output */
+
+input:focus span {
+    /*visibility: hidden;*/
+    display: none;
+}
+
+input:focus-visible span {
+   /* visibility: visible;*/
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+label{
+    position: relative;
+    right: 42px;
+}

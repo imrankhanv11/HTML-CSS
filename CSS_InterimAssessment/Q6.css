@@ -1,0 +1,35 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+section{
+    width: 100vw;
+    height:100vh;
+    /* I know the concept of liner granding color with left-right or top-bottom i tired the spelling may resaon to put it */
+    background-color: hsla(from rgb(112, 39, 53) 11 24 81);
+}
+
+h1{
+    text-align: center;
+    font-size: 5vw;
+    margin: 0;
+}
+
+.text-block{
+    width: 80%;
+    background-color: hsla(from rgb(104, 141, 104) 77 34 88);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: justify;
+    text-indent: 50px;
+    border: 2px ridge hotpink;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+::selection{
+    background-color: hotpink;
+    color: white;
+}
