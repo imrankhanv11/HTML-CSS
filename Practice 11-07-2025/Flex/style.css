@@ -20,14 +20,22 @@ p {
     padding: 3px;
 }
 
+.container div:nth-child(5){
+    background-color: chartreuse;
+    order: 9;
+}
+
+.container div:nth-child(3){
+    background-color: chocolate;
+}
+
 .container1 {
-    width: 90vw;
-    min-height: 600px;
+    width: 800px;
+    min-height: 800px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -52,8 +60,31 @@ p {
 .container1 div:nth-child(3){
     flex-shrink: 2;
     background-color: greenyellow;
+    align-self: center;
 }
 .container1 div:nth-child(5){
     flex-basis: 180px;
     background-color: pink;
+    align-self: flex-end;
+}
+
+.container1 div:nth-child(4){
+    background-color: darkgreen;
+    color: white;
+    flex-basis: 30%;
+    align-self: stretch;
+}
+
+.container1 div:last-child{
+    background-color: darksalmon;
+    height: 300px;
+    align-self: flex-end;
+}
+
+.container1 div:first-child{
+    flex-shrink: 2;
+}
+
+.container1 div:nth-child(6){
+    align-self: flex-end;
 }
