@@ -1,0 +1,48 @@
+.translatex{
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    transform: translateX(-30%);
+    border: 2px solid black;
+}
+
+.translatey{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    transform: translateY(70px);
+}
+
+.translate{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    transform: translate(40px,40px);
+}
+
+.translatez{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    transform: translateZ(300px);
+}
+
+.translate3d{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    transform: translate3d(20px,30px,40px);
+    margin-bottom: 100px;
+}
+
+div[class*="rota"]{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.rotatex:hover{ transform:rotateX(210deg); } 
+.rotatey:hover{ transform:rotateY(100deg); } 
+.rotatez:hover{ transform:rotateZ(80deg); } 
+.rotate:hover { transform:rotate(18deg); }
