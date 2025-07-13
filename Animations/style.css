@@ -1,0 +1,126 @@
+.anim1 {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    animation: anim1 4s ease-in-out 2s 4 alternate forwards;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.anim1div {
+    height: 201px;
+}
+
+@keyframes anim1 {
+    from {
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+    }
+
+    to {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        border-radius: 50%;
+    }
+}
+
+.anim2 {
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    position: relative;
+    animation: anim2 20s ease-in-out 5s 5 alternate backwards;
+}
+
+@keyframes anim2 {
+
+    0% {
+        transform: translate(0, 0);
+        border-radius: 0%;
+    }
+
+    25% {
+        transform: translate(150px, 0);
+        background-color: red;
+        border-radius: 25%;
+    }
+
+    50% {
+        transform: translate(150px, 150px);
+        background-color: gray;
+        border-radius: 50%;
+    }
+
+    75% {
+        transform: translate(0, 150px);
+        background-color: green;
+        border-radius: 75%;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: purple;
+        border-radius: 100%;
+    }
+}
+
+.anim2div {
+    height: 310px;
+}
+
+.anim3div {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anim3 {
+    height: 10px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.ball {
+    /* starting size & look */
+    width: 9px;
+    height: 10px;
+    background: red;
+
+    animation: loading 10s linear 3s 5 normal forwards;
+}
+
+@keyframes loading {
+    0% {
+        width: 9px;
+    }
+
+    25% {
+        width: 50px;
+    }
+
+    50% {
+        width: 100px;
+        
+        background-color: orange;
+    }
+
+    75% {
+        width: 150px;
+        background-color: yellow;
+    }
+
+    100% {
+        width: 199px;
+        background-color: green;
+    }
+}
