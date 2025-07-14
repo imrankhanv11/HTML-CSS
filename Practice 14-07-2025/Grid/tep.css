@@ -1,0 +1,114 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas:
+        'head head head'
+        'aside main main'
+        'footer footer footer';
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    gap: 2px;
+}
+
+header {
+    grid-area: head;
+    background-color: rgb(146, 196, 196);
+    position: sticky;
+    top: 0px;
+
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(98, 113, 114);
+    position: sticky;
+    left: 0px;
+    top: 121.8px;
+}
+
+main {
+    grid-area: main;
+    background-color: rgba(53, 93, 119, 0.048);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(17, 17, 29);
+    color: white;
+    /* z-index: 2; */
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: skyblue;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+    perspective: 10px;
+    transition: all 0.6s linear 1ms;
+    border: 1px solid black;
+}
+
+.title h1::before {
+    content: '#';
+    text-shadow: red 2px 2px 2px;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+nav a:hover {
+    background-color: hotpink;
+    color: white;
+    transform: rotateY(360deg);
+}
+
+.ani {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 100%;
+    /* animation: round 3s linear 1s infinite; */
+}
+
+@keyframes round {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translatex(238px);
+    }
+
+    50% {
+        transform: translate(238px, 665px);
+    }
+
+    75% {
+        transform: translate(0px, 665px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

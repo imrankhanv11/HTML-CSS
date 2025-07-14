@@ -1,0 +1,58 @@
+.rolling-container, .check-3d{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    perspective: 800px;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    animation: Roll 10s linear 1s infinite;
+}
+
+@keyframes Roll {
+    0%{
+        transform: rotate(0) translateX(0);
+        background-color: red;
+    }
+    25%{
+        transform:translate(250px,0) rotate(180deg) ;
+        background-color: orangered;
+    }
+    50%{
+        transform: translate(250px,250px) rotate(-180deg);
+        background-color: yellow;
+    }
+    75%{
+        transform: translate(0,250px) rotate(180deg);
+        background-color: green;
+    }
+    100%{
+        transform: translate(0,0) rotate(-180deg);
+        background-color: blue;
+    }
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    transition: all 1s linear;
+}
+
+.check-3d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    transform: rotate(360deg) rotateY(360deg);
+}

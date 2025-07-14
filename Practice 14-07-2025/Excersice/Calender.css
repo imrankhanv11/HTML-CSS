@@ -1,0 +1,42 @@
+.container{
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(93, 148, 196);
+}
+
+.calender{
+    margin: 2px;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: minmax(100px, auto);;
+    box-sizing: border-box;
+    gap: 2px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.calender-items{
+    background-color: aliceblue;
+    font-size: large;
+}
+
+.week{
+    color: red;
+    text-align: center;
+}
+
+body{
+    background-color: rgba(109, 92, 92, 0.4);
+}

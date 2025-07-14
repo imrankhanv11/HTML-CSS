@@ -1,0 +1,222 @@
+.grid-container{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.item1{
+    background-color: green ;
+}
+.item2{
+    background-color:lime;
+}
+.item3{
+    background-color: antiquewhite;
+}
+.item4{
+    background-color: chocolate;
+}
+.item5{
+    background-color: darkmagenta;
+}
+.item6{
+    background-color: deeppink;
+}
+.item7{
+    background-color: darkred;
+    justify-self: center;
+}
+.item8{
+    background-color: black;
+    color: white;
+}
+.item9{
+    background-color: gold;
+    align-self: flex-end;
+}
+
+.item10{
+    background-color: darksalmon;
+}
+.item11{
+    background-color: darkseagreen;
+}
+
+.grid-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 4px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item3{
+    grid-row: span 2;
+}
+.item4{
+    grid-row: 2/3;
+}
+
+.item5{
+    grid-row: 2/ 4;
+}
+
+
+.item8{
+    place-self: center;
+}
+
+.item11{
+    grid-column: span 2;
+}
+
+.item4{
+    grid-column: span 2;
+}
+
+/* grid conatiner 2 */
+
+.grid-container2{
+    border: 2px solid orangered;
+    width: 650px;
+    gap: 5px;
+    height: 650px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(6, 100px);
+    place-content: center;
+}
+
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in1{
+    background-color: orange;
+    height: 152px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in2{
+    background-color: green;
+    height: 152px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    background-color: rgb(86, 167, 54);
+}
+.box3{
+    background-color: rgb(44, 14, 14);
+    color: white;
+}
+.box4{
+    background-color: rgb(175, 75, 83);
+}
+.box5{
+    background-color: rgb(159, 196, 91);
+}
+.box6{
+    background-color: rgb(109, 56, 194);
+}
+.box7{
+    background-color: rgba(95, 133, 34, 0.473);
+}
+.box8{
+    background-color: rgba(35, 86, 161, 0.555);
+}
+.box9{
+    background-color: rgb(231, 51, 150);
+}
+.box10{
+    background-color: rgb(80, 15, 15);
+}
+.box11{
+    background-color: rgba(40, 32, 163, 0.466);
+}
+.box12{
+    background-color: hotpink;
+}
+.box13{
+    background-color: orange;
+}
+.box14{
+    background-color: yellowgreen;
+}
+.box15{
+    background-color: rgb(19, 131, 196);
+}
+.box16{
+    background-color: orangered;
+}
+.box17{
+    background-color: pink;
+}
+.box18{
+    background-color: magenta;
+}
+
+.box19{
+    background-color: indianred;
+}
+
+.g-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box10{
+    color: white;
+}
+
+.box4{
+    grid-row: span 2;
+}
+
+.box12{
+    grid-column: span 2;
+}
+.box1{
+    grid-row: span 3;
+}
+
+.box13{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.box15{
+    grid-row: span 2;
+}
+
+.box6{
+    grid-column:  span 2;
+}
+
+.box19{
+    grid-column: span 2;
+}
+
+.box11{
+    grid-row: span 2;
+}
