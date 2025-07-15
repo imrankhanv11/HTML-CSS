@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'aside1 main main aside2'
+        'footer footer footer footer';
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 85px 1fr auto;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(46, 36, 36);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.left-aside {
+    grid-area: aside1;
+    background-color: rgba(129, 106, 63, 0.3 );
+    position: sticky;
+    top: 90px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+.right-aside {
+    grid-area: aside2;
+    background-color: rgba(129, 106, 63, 0.3 );
+    position: sticky;
+    top: 90px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: wheat;
+    min-height: 200px;
+    z-index: 100;
+}
+
+nav{
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: white;
+}
+
+h1{
+    margin: 5px 0 0 5px;
+    color: white;
+}
+
+h1::before{
+    content: '@';
+    text-shadow: 2px 2px 3px rgb(211, 100, 27);
+}
+
+aside, main, footer{
+    padding: 5px;
+    text-align: justify;
+    text-indent: 50px;
+}
+aside{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+main{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+main::first-letter{
+    text-transform: capitalize;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: red;
+}
+
+.container-coloumn{
+    column-gap: 3%;
+    column-count: 3;
+}
