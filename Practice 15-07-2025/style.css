@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.green-load,
+.blue-load {
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-item {
+  height: 20px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.green-item {
+  height: 19px;
+  width: 20px;
+  background-color: green;
+  border-radius: 4px;
+  animation: greenc 3s ease-out 1s infinite normal;
+}
+
+@keyframes greenc {
+  from {
+    height: 20px;
+    width: 20px;
+  }
+
+  to {
+    height: 20px;
+    width: 200px;
+  }
+}
+
+.loader {
+  display: block;
+  width: 130px;
+  height: 4px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background: #0071e2;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  background-color: #f8f8f8;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+
+
+.float {
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.float label {
+  position: absolute;
+  top: 46%;
+  left: 22%;
+  background-color: white;
+  font-size: small;
+}
+
+.float input:focus~label {
+  transition: all linear 0.5s;
+  top: 40%;
+}
+
