@@ -25,7 +25,7 @@ header {
 
 .left-aside {
     grid-area: aside1;
-    background-color: rgba(129, 106, 63, 0.3 );
+    background-color: rgba(129, 106, 63, 0.3);
     position: sticky;
     top: 90px;
     max-height: calc(100vh - 90px);
@@ -34,7 +34,7 @@ header {
 
 .right-aside {
     grid-area: aside2;
-    background-color: rgba(129, 106, 63, 0.3 );
+    background-color: rgba(129, 106, 63, 0.3);
     position: sticky;
     top: 90px;
     max-height: calc(100vh - 90px);
@@ -53,52 +53,79 @@ footer {
     z-index: 100;
 }
 
-nav{
+nav {
     height: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     font-variant: small-caps;
     font-weight: 600;
     color: white;
 }
 
-h1{
+h1 {
     margin: 5px 0 0 5px;
     color: white;
 }
 
-h1::before{
+h1::before {
     content: '@';
     text-shadow: 2px 2px 3px rgb(211, 100, 27);
 }
 
-aside, main, footer{
+aside,
+main,
+footer {
     padding: 5px;
     text-align: justify;
     text-indent: 50px;
 }
-aside{
+
+aside {
     margin-left: 5px;
     margin-right: 5px;
 }
-main{
+
+main {
     margin-top: 5px;
     border-radius: 5px;
 }
 
-main::first-letter{
+main::first-letter {
     text-transform: capitalize;
     font-size: larger;
     font-weight: bolder;
     background-color: red;
 }
 
-.container-coloumn{
+.container-coloumn {
     column-gap: 3%;
     column-count: 3;
+}
+
+@media screen and (max-width: 768px) {
+
+    .layout-container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-areas:
+            'header header'
+            'main main'
+            'aside1 aside2'
+            'footer footer';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 85px 1fr 200px auto;
+    }
+
+    .left-aside {
+        margin: 5px;
+    }
+
+    .right-aside {
+        margin: 5px;
+    }
 }
