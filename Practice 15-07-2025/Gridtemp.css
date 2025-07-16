@@ -62,9 +62,26 @@ nav {
 
 nav a {
     text-decoration: none;
+    display: inline-block;
     font-variant: small-caps;
     font-weight: 600;
     color: white;
+    border-radius: 4px;
+    padding: 2px;
+    transition: all 0.5s linear;
+}
+
+button {
+    display: none;
+}
+
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    transform: scaleX(1.2);
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 5px brown;
 }
 
 h1 {
@@ -107,6 +124,19 @@ main::first-letter {
     column-count: 3;
 }
 
+@media screen and (min-width: 769px) {
+    nav {
+        display: flex !important;
+    }
+}
+
+
+@media screen and (min-width: 426px) {
+    nav {
+        display: flex !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .layout-container {
@@ -127,5 +157,85 @@ main::first-letter {
 
     .right-aside {
         margin: 5px;
+    }
+
+    .check button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:426px) {
+
+    .layout-container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-areas:
+            'header'
+            'main'
+            'aside1'
+            'aside2'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: 73px 1fr 200px 200px auto;
+    }
+
+    .left-aside {
+        margin: 5px;
+        position: static;
+    }
+
+    .right-aside {
+        margin: 5px;
+        position: static;
+    }
+
+    button {
+        color: black;
+        padding: 3px;
+        margin-top: 5px;
+        margin-right: 10px;
+        display: inline-block;
+        text-align: right;
+        border-radius: 4px;
+        font-weight: 700;
+    }
+
+    nav {
+        background-color: rgba(107, 136, 162, 0.8);
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+
+    nav a {
+        color: black;
+        display: block;
+        margin-left: 3px;
+    }
+
+
+    nav a:hover {
+        background-color: white;
+        color: black;
+        transform: scaleX(1.2);
+        border: 1px solid whitesmoke;
+        box-shadow: 2px 2px 5px brown;
+    }
+
+    .check {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .check button {
+        display: block;
+    }
+
+    .container-coloumn {
+        column-count: 1;
     }
 }
