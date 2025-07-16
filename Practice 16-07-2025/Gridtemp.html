@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid_Temp</title>
     <link rel="stylesheet" href="Gridtemp.css">
+    <script>
+        function shownavbar() {
+            const navbarmbl = document.querySelector('.navbar')
+            if (navbarmbl.style.display === 'flex') {
+                navbarmbl.style.display = 'none';
+            } else {
+                navbarmbl.style.display = 'flex';
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div class="layout-container">
         <header>
-            <h1>Teamup</h1>
-            <nav>
-                <a href="#">Value</a>
-                <a href="#">Value</a>
-                <a href="#">Value</a>
-                <a href="#">Value</a>
-                <a href="#">Value</a>
+            <h1>Team-up</h1>
+            <div class="check">
+                <button onclick="shownavbar()" class="navbtn">#</button>
+            </div>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">aside</a>
+                <a href="#">aside</a>
+                <a href="#">Footer</a>
             </nav>
         </header>
         <aside class="left-aside">
@@ -68,6 +81,9 @@
                 veritatis laudantium doloribus nesciunt consequuntur!
             </div>
             <br>
+            <img class="full-image" src="street.PNG" alt="img">
+            <br>
+            <br>
             lroem300 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum excepturi ipsa architecto odio
             beatae. Numquam consectetur molestiae assumenda perferendis? Quo maiores, qui nesciunt quia rem molestiae
             dolores aliquid modi vitae ipsa architecto. Adipisci nihil expedita odio at assumenda exercitationem
@@ -81,7 +97,11 @@
             voluptas suscipit molestiae atque. Ab iure architecto amet sapiente maiores, voluptatem aperiam! Facilis
             laudantium optio maiores sint delectus odio. Vitae ratione quia in ad accusamus laboriosam vel repudiandae
             sed quisquam explicabo, dolores doloremque deserunt aliquid animi, maxime expedita? Facilis, expedita eius.
-            Cumque ipsam expedita magnam hic nemo recus <br>andae ab deserunt corrupti, voluptate laudantium vel
+            Cumque ipsam expedita magnam hic nemo recus <br>
+            <br>
+            <img class="fit-image" src="street.PNG" alt="img">
+
+            andae ab deserunt corrupti, voluptate laudantium vel
             similique
             corporis nulla, obcaecati accusamus doloribus itaque non fugiat? Rerum vitae culpa dolor temporibus saepe
             commodi totam quasi consectetur, fugit <br><br>iste maxime deleniti magnam ratione voluptatibus.
