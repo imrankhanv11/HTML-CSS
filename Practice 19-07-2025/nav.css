@@ -2,87 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.navone {
-    height: 80px;
-    width: 100%;
+/* Header and Nav styles */
+header {
+    background-color: whitesmoke;
+    height: 50px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
 }
 
-.logo1 {
-    margin: 20px;
-    width: 40%;
-}
-
-.nav1 {
+nav .button1 {
     display: none;
 }
 
-.nav1 ul {
+nav ul {
     display: flex;
     list-style-type: none;
-    width: 50%;
+    width: 30%;
     justify-content: space-between;
-
-    li {
-        margin: 20px;
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    }
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.navbuttonone {
-    display: none;
+nav ul li {
+    height: 100%;
 }
 
-@media (max-width: 768px) {
-    .navbuttonone {
-        display: block;
-    }
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    transition: background-color 0.2s linear;
+}
 
-    .navbuttonone button {
-        background-color: transparent;
-        border: none;
-        height: 30px;
-        width: 30px;
-        font-size: 20px;
-        font-weight: 900;
-    }
-
-    .nav1 {
-        /* display: flex; */
-    }
-
-    .nav1 ul {
-        flex-direction: column;
-        width: 50%;
-        position: fixed;
-        right: 0px;
-        height: calc(100vh - 80px);
-        top: 80px;
-        background-color: rgba(0, 0, 0, 0.732);
-        justify-content: flex-start;
-
-        li {
-            margin: 20px;
-
-            a {
-                text-decoration: none;
-                color: whitesmoke;
-                display: block;
-                padding: 10px;
-                width: 100%;
-            }
-        }
-    }
-
-
+nav ul li a:hover {
+    background-color: red;
+    transform: scale(1.1);
+    color: white;
 }
