@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr auto;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+}
+
+p {
+    font-size: clamp(1rem, 2vw + 0.25rem, 1.25rem);
+}
+
+small {
+    font-size: clamp(0.8rem, 1vw + 0.2rem, 1rem);
+}
+
+:root {
+    --padding-small: clamp(0.25rem, 0.5vw, 0.75rem);
+    --padding-medium: clamp(0.5rem, 1vw, 1.25rem);
+    --padding-large: clamp(1rem, 2vw, 2rem);
+
+    --margin-small: clamp(0.25rem, 0.5vw, 0.75rem);
+    --margin-medium: clamp(0.5rem, 1vw, 1.25rem);
+    --margin-large: clamp(1rem, 2vw, 2rem);
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav ul {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 60px;
+    right: 0;
+    box-shadow: 2px 2px 2px white;
+    height: calc(100vh - 60px);
+    background-color: rgba(0, 0, 0, 0.001);
+    list-style: none;
+    width: 40%;
+    backdrop-filter: blur(10px);
+
+    li {
+        margin: 15px;
+    }
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #0077cc;
+}
+
+header button {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+aside {
+    display: none;
+}
+
+main {
+    grid-area: main;
+    background-color: rgba(37, 37, 125, 0.684);
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
+
+@media (min-width:768px) {
+    header nav ul {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        height: 100%;
+        background-color: transparent;
+        list-style: none;
+        width: 40%;
+        backdrop-filter: blur(0);
+        justify-content: space-between;
+        box-shadow: none;
+
+        li {
+            margin: 0;
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+    header button {
+        display: none;
+    }
+
+}

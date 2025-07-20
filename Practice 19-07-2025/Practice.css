@@ -49,7 +49,7 @@ h1 {
     .jump {
         background-color: purple;
         position: absolute;
-        border-radius: 50%;
+        border-radius: 20%;
         animation: jump 1s linear 1s infinite normal backwards;
     }
 }
