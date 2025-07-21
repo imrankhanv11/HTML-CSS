@@ -15,7 +15,7 @@
     white-space: nowrap;
     width: 0px;
     margin: auto;
-    animation: word 2s ease 1ms forwards, blink 0.2s step-end infinite;
+    /* animation: word 2s ease 1ms forwards, blink 0.2s step-end infinite; */
 }
 @keyframes word {
     from{
@@ -42,7 +42,7 @@
     border: 5px solid;
     border-color: green transparent transparent transparent;
     border-radius: 50%;
-    animation: round 1.3s linear 1ms 1;
+    /* animation: round 1.3s linear 1ms 1; */
 }
 
 @keyframes round {
@@ -57,14 +57,13 @@
 
 .center h1{
     animation: center2 1s ease 1ms forwards;
-    position: relative;
 }
 @keyframes center2 {
     from{
         transform: translateX(0px);
     }
     to{
-        transform: translateX(200px);
+        transform: translateX();
     }
 }
 
@@ -74,7 +73,7 @@
     border: 4px solid;
     border-color: rgb(77, 14, 235) transparent transparent transparent;
     border-radius: 50%;
-    animation: load 1s linear 1ms infinite backwards;
+    /* animation: load 1s linear 1ms infinite backwards; */
 }
 
 @keyframes load {
@@ -84,4 +83,47 @@
     to{
         transform: rotate(360deg);
     }
+}
+
+.form{
+    min-height: 400px;
+    width: clamp(200px, 50%, 400px);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form .item{
+    margin-bottom: 20px;
+    position: relative;
+
+    input{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+    }
+    label{
+        pointer-events: none;
+    }
+}
+
+.item label{
+    position: absolute;
+    left: 0;
+    transition: transform 0.5s linear;
+}
+
+.item input:focus + label, .item input:valid + label{
+    transform: translateY(-12px);
 }
