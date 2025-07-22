@@ -18,7 +18,11 @@ body {
 
 header {
     grid-area: Header;
+    width: 100%;
     background-color: red;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
 }
 
 main {
@@ -37,6 +41,7 @@ nav {
     height: 100%;
     justify-content: space-between;
     padding: 20px;
+
 }
 
 nav ul {
@@ -46,18 +51,26 @@ nav ul {
     right: 0px;
     top: 8vh;
     list-style-type: none;
-    width: 50%;
-    background-color: black;
-    height: calc(100vh - 8vh);
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.8);
+    height: 35%;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
 
     li {
         padding: 20px;
+        margin: 2px;
 
         a {
             text-decoration: none;
             color: whitesmoke;
         }
     }
+}
+
+section {
+    margin: 8px 0px;
 }
 
 nav .nav-button button {
@@ -67,12 +80,36 @@ nav .nav-button button {
     border: none;
 }
 
-.products{
+.roll {
+    width: 99%;
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        animation: roll 10s linear 1ms infinite;
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: translatex(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: 320px;
     gap: 10px;
-    margin: 10px 2px;
 }
 
 
@@ -90,7 +127,8 @@ nav .nav-button button {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.product-items .picture{
+
+.product-items .picture {
     height: 150px;
     width: 80%;
     margin: auto;
