@@ -1,0 +1,83 @@
+main {
+    min-height: calc(100vh - 8vh);
+}
+
+.main-title {
+    padding-left: var(--padding-medium);
+}
+
+.projects {
+    max-width: 75%;
+    border: 2px solid black;
+    margin: auto;
+    min-height: 600px;
+    display: grid;
+    /* used auto-fit to take responsive */
+    grid-template-columns: repeat(auto-fit, 230px);
+    /* grid-template-rows: repeat(2, 250px); */
+    column-gap: 20px;
+    row-gap: 20px;
+    place-content: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, rgba(147, 67, 67, 0.216), rgba(44, 44, 167, 0.605), rgba(68, 207, 68, 0.595), rgba(152, 56, 104, 0.614));
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--third-color);
+    padding: var(--padding-medium);
+}
+
+.project-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(236, 227, 227, 0.3);
+    border: 2px solid black;
+
+}
+
+
+.item-picture {
+    height: 100px;
+    width: 100px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.item-discription {
+    text-align: justify;
+    padding: var(--padding-medium);
+    text-indent: 10px;
+    font-size: small;
+}
+
+
+
+@media (max-width:426px) {
+    /* major part is done using grid auto-fit concepts */
+    .projects {
+        max-width: 90%;
+        margin-bottom: var(--margin-medium, 10px);
+    }
+}
+
+/* Hover active only on mouse hover like desktop or laptop */
+@media (hover: hover) {
+    .projects:hover .project-items {
+        filter: blur(1px) grayscale(90%);
+
+    }
+
+    .projects .project-items:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease;
+        filter: blur(0px) grayscale(0%);
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px var(--third-color);
+    }
+
+}
