@@ -123,6 +123,11 @@ footer {
 
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
 .footer-header {
     margin-bottom: var(--margin-large);
 
@@ -166,6 +171,7 @@ footer {
 
 
 @media (max-width:426px) {
+
     /* Nav Bar only for mobile*/
     header nav ul {
         display: none;

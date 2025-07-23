@@ -21,11 +21,6 @@ main {
     height: calc(100vh - 8vh);
 }
 
-footer {
-    grid-area: Footer;
-    background-color: black;
-    color: white;
-}
 
 
 .contact-container {
