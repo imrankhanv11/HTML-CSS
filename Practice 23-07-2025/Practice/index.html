@@ -32,6 +32,9 @@
         <h2>print</h2>
         <button onclick="window.print()">click</button>
     </div>
+    <div class="box">
+        <p id="demo"></p>
+    </div>
     <script>
         document.getElementById('first').innerHTML = 'changed';
 
@@ -41,6 +44,14 @@
 
         document.getElementById('fourth').innerText = '<h1>same we give</h1>';
 
+
+        let myNumber = 2;
+        let txt = "";
+        while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+            txt = txt + myNumber + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
     </script>
 </body>
 
