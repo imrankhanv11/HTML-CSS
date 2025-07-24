@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../CSS/Contact.css">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>ImranKhan_V</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script>
         function navbarshow() {
             const navbar = document.querySelector('.nav')
             if (navbar.style.display === 'flex') {
-                navbar.style.display = 'none';
-            } else {
-                navbar.style.display = 'flex';
+                navbar.style.display = 'none'
+            }
+            else {
+                navbar.style.display = 'flex'
             }
         }
     </script>
@@ -29,40 +30,42 @@
                 <button onclick="navbarshow()">&#9776</button>
             </div>
             <ul class="nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="Project.html">Project</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="Html/Project.html">Project</a></li>
+                <li><a href="Html/Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="introduction">
 
-        <div class="contact-container">
-            <h2>Contact</h2>
-            <form>
-                <div class="input">
-                    <input type="text" required name="name">
-                    <label for="name">Name</label>
+            <div class="left">
+                <div class="img">
+                    <img src="Assests/Images/download (4).jpg" alt="">
                 </div>
-                <div class="input">
-                    <input type="email" required name="email">
-                    <label for="password">Email</label>
-                </div>
-                <div class="input">
-                    <input type="text" required name="subject">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="input-text">
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <div class="button-value">
+            </div>
 
-                    <button type="submit">Contact</button>
+            <div class="right">
+                <div class="name">
+                    <h2>Imran Khan V</h2>
                 </div>
-            </form>
-            <h5>Thank you</h5>
-        </div>
+                <div class="skills">
+                    <ul>
+                        <li>Java <progress value="80" max="100"></li>
+                        <li>C# <progress value="75" max="100"></progress></li>
+                        <li>ML <progress value="90" max="100"></progress></li>
+                    </ul>
+                </div>
+                <div class="quote">
+                    <Blockquote><q>Consistency is the key of success also lazyness is mother of all we have to give
+                            respect both in same time</q></Blockquote>
+                </div>
+            </div>
+
+        </section>
+        <!-- <div class="circle">
+
+        </div> -->
     </main>
     <footer>
         <div class="footer-header">
