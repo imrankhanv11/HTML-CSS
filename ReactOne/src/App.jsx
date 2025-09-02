@@ -1,4 +1,5 @@
 import './App.css';
+import Event from './event.jsx';
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
     
     <div className="App">
       <h1>Hello World!</h1>
+      <Event isvalue={false}/>
     </div>
   )
 }
