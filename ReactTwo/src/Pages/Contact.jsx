@@ -33,10 +33,10 @@ function contact() {
         });
     }
 
-    function deleteitem(index){
-            const update = list.filter((_,index1)=> index1 != index);
+    function deleteitem(index) {
+        const update = list.filter((_, index1) => index1 != index);
 
-            addlist(update)
+        addlist(update)
     }
 
     return (
@@ -62,7 +62,7 @@ function contact() {
                                 <strong className="text-primary">{value.todo}</strong>
                                 <span className="text-muted ms-2">- {value.discription}</span>
                             </div>
-                            <button className="btn btn-danger" onClick={()=> deleteitem(index)}>delete</button>
+                            <button className="btn btn-danger" onClick={() => deleteitem(index)}>delete</button>
                         </li>
                     ))}
                 </ul>
